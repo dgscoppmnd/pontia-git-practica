@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       message:
-        description: 'Hola Mundo
+        description: 'Hola Mundo'
         required: true
         default: 'Hola desde GitHub Actions'
 
