@@ -1,0 +1,16 @@
+name: Demo Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'Hola Mundo
+        required: true
+        default: 'Hola desde GitHub Actions'
+
+jobs:
+  print_message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "${{ github.event.inputs.message }}"
